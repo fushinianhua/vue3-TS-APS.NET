@@ -10,5 +10,9 @@
     {
       "path": "./tsconfig.vitest.json"
     }
-  ]
+  ],
+  "compilerOptions": {
+    "forceConsistentCasingInFileNames": true, //这是属性，用于强制文件名大小写一致
+    "strict": true //这是属性，用于启用所有严格类型检查选项
+  }
 }

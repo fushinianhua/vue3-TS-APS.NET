@@ -1,0 +1,24 @@
+// src/styles/variable.scss
+$primary-color: #42b983; // Vue 官方绿色
+$font-size-base: 14px;
+// 颜色变量
+$primary-color: #42b983;
+$secondary-color: #35495e;
+$danger-color: #ff5252;
+$success-color: #4caf50;
+$warning-color: #ffc107;
+
+// 字体变量
+$font-family: 'Helvetica Neue', Arial, sans-serif;
+$font-size-base: 16px;
+
+// 间距变量
+$spacing-sm: 8px;
+$spacing-md: 16px;
+$spacing-lg: 24px;
+
+// 响应式断点
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
