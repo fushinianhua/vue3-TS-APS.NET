@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  //background-repeat: no-repeat;
+  background-repeat: no-repeat;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
@@ -97,8 +97,9 @@ html [type='button'],
   border: 0;
   color: inherit;
   background-color: transparent;
-  -webkit-appearance: button;
   appearance: textfield;
+  -webkit-appearance: button;
+
   cursor: pointer;
 }
 
@@ -126,8 +127,8 @@ input {
 }
 
 [type='number'] {
-  -moz-appearance: textfield;
   appearance: textfield;
+  -moz-appearance: textfield;
 
   &::-webkit-inner-spin-button,
   &::-webkit-outer-spin-button {
@@ -138,8 +139,9 @@ input {
 }
 
 [type='search'] {
-  -webkit-appearance: textfield;
   appearance: textfield;
+  -webkit-appearance: textfield;
+
   &::-webkit-search-cancel-button,
   &::-webkit-search-decoration {
     -webkit-appearance: none;

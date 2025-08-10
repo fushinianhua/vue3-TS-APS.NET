@@ -7,7 +7,7 @@
     "node": "^20.19.0 || >=22.12.0"
   },
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --open",
     "build": "run-p type-check \"build-only {@}\" --",
     "preview": "vite preview",
     "test:unit": "vitest",
@@ -17,6 +17,7 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "@element-plus/icons-vue": "^2.3.2",
     "axios": "^1.11.0",
     "element": "^0.1.4",
     "element-plus": "^2.10.6",
@@ -38,12 +39,12 @@
     "eslint-plugin-vue": "~10.3.0",
     "jiti": "^2.4.2",
     "jsdom": "^26.1.0",
+    "mockjs": "^1.1.0",
     "npm-run-all2": "^8.0.4",
     "prettier": "3.6.2",
-    "sass": "^1.90.0",
-    "sass-loader": "^16.0.5",
     "typescript": "^5.9.2",
     "vite": "^7.0.6",
+    "vite-plugin-mock": "^3.0.2",
     "vite-plugin-svg-icons": "^2.0.1",
     "vite-plugin-vue-devtools": "^8.0.0",
     "vitest": "^3.2.4",
