@@ -2,7 +2,7 @@
 import request from '@/Utils/request';
 import type { IUser } from '@/assets/api/user/type';
 enum API {
-     LOGIN_URL = '/user/login',
+     LOGIN_URL = '/api/user/login',
 
      USERINFO_URL = '/admin/acl/index/info',
 
@@ -11,7 +11,6 @@ enum API {
 // 登录接口
 //登录接口
 export const reqLogin = (data: IUser) => {
-     console.log(data);
      return request.post(API.LOGIN_URL, data);
 };
 // 获取用户信息接口

@@ -1,3 +1,4 @@
+import { type MockMethod } from 'vite-plugin-mock';
 //用户信息数据
 function createUserList() {
      return [
@@ -53,6 +54,7 @@ export default [
                }
                //如果有返回成功信息
                const { token } = checkUser;
+               console.log(token);
                return { code: 200, data: { token } };
           },
      },
@@ -73,4 +75,4 @@ export default [
                return { code: 200, data: { checkUser } };
           },
      },
-];
+] as MockMethod[];

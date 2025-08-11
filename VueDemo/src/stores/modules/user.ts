@@ -14,7 +14,6 @@ const useUserStore = defineStore('User', {
                const res = await reqLogin(data);
                if (res.data.code === 200) {
                     this.token = res.data.token;
-                    console.log(res.data.token);
                }
           },
      },

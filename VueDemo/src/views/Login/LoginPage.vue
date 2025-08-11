@@ -11,12 +11,22 @@
                          </el-form-item>
 
                          <el-form-item>
-                              <el-input type="password" v-model="formvalue.password" :prefix-icon="Lock"
-                                   :suffix-icon="Hide"></el-input>
+                              <el-input
+                                   type="password"
+                                   v-model="formvalue.password"
+                                   :prefix-icon="Lock"
+                                   :suffix-icon="Hide"
+                              ></el-input>
                          </el-form-item>
 
                          <el-form-item>
-                              <el-button class="button" type="primary" size="default" @click="change">登录</el-button>
+                              <el-button
+                                   class="button"
+                                   type="primary"
+                                   size="default"
+                                   @click="change"
+                                   >登录</el-button
+                              >
                          </el-form-item>
                     </el-form>
                </el-col>
@@ -32,9 +42,7 @@ const formvalue = reactive({ username: 'admin', password: '111111' }); // 确保
 const userStore = useUserStore();
 
 function change() {
-     const res = userStore.userlogin(formvalue);
-
-     console.log(res);
+     userStore.userlogin(formvalue);
 }
 </script>
 <!-- css样式 -->
@@ -46,7 +54,6 @@ function change() {
      background-size: cover;
      /* 可选：添加背景固定效果（不随内容滚动） */
      background-attachment: fixed;
-
 }
 
 .登录 {

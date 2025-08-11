@@ -2,7 +2,7 @@ import axios, { type AxiosResponse, type AxiosError } from 'axios';
 import { ElMessage } from 'element-plus';
 
 // 提取配置常量
-const API_BASE_URL = 'http://localhost:5173/';
+const API_BASE_URL = '';
 const REQUEST_TIMEOUT = 5000;
 
 // 创建 axios 实例
