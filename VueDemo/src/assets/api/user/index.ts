@@ -1,0 +1,20 @@
+//统一管理用户相关的接口
+import request from '@/Utils/request';
+import type { IUser } from '@/assets/api/user/type';
+enum API {
+     LOGIN_URL = '/user/login',
+
+     USERINFO_URL = '/admin/acl/index/info',
+
+     LOGOUT_URL = '/admin/acl/index/logout',
+}
+// 登录接口
+//登录接口
+export const reqLogin = (data: IUser) => {
+     console.log(data);
+     return request.post(API.LOGIN_URL, data);
+};
+// 获取用户信息接口
+export const requserinfo = () => {
+     return request.get(API.USERINFO_URL);
+};
