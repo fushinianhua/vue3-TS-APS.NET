@@ -18,7 +18,7 @@ const http = axios.create({
 http.interceptors.request.use(
      (config) => {
           // 若有登录Token，添加到请求头（根据项目实际存储方式调整）
-          const token = localStorage.getItem('authToken');
+          const token = localStorage.getItem('Token');
           if (token) {
                config.headers.Authorization = `Bearer ${token}`;
           }

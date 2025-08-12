@@ -6,6 +6,7 @@ export interface IUser {
 //用户信息接口返回类型
 interface IResponse {
      token: string;
+     message: string;
 }
 //用户信息接口返回类型
 export interface LoginResponse {
@@ -22,6 +23,7 @@ interface Userinfo {
      routes: string[];
      token: string;
 }
+//用户信息接口返回类型
 interface User {
      checkuser: Userinfo;
 }

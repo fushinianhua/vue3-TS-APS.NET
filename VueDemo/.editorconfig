@@ -1,8 +1,9 @@
 [*.{js,jsx,mjs,cjs,ts,tsx,mts,cts,vue,css,scss,sass,less,styl}]
 charset = utf-8
-indent_size = 5
-indent_style = space//缩进
-insert_final_newline = true//添加行末空行
-trim_trailing_whitespace = true//删除行末空格
-end_of_line = lf//行末换行符
-max_line_length = 200//最大行长度
+indent_size = 3
+indent_style = space
+insert_final_newline = true
+trim_trailing_whitespace = true
+end_of_line = lf
+max_line_length = 500
+trailing_comma = all

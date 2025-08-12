@@ -11,9 +11,20 @@ const useUserStore = defineStore('User', {
      },
      actions: {
           async userlogin(data: IUser) {
-               const res = await reqLogin(data);
-               if (res.data.code === 200) {
-                    this.token = res.data.token;
+               try {
+                    const res = await reqLogin(data);
+                    if (res.code === 200) {
+                         this.token = res.data.token;
+                         return res.data; // 成功时返回数据
+                    } else {
+                         throw new Error(res.data.message || '122323账号或密码错误');
+                    }
+               } catch (error) {
+                    if (error instanceof Error) {
+                         throw error;
+                    } else {
+                         throw new Error('网络错误或服务器无响应');
+                    }
                }
           },
      },
